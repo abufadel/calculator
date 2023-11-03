@@ -1,0 +1,102 @@
+.bodyOfCalc {
+    background-color: #0f2763;
+    position: relative;
+    width: 75%;
+    max-width: 500px;
+    height: 77vh;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 0px 35px 35px rgba(60, 46, 255, 0.54);
+    -moz-box-shadow: 0px 0px 35px 35px rgba(60, 46, 255, 0.54);
+    box-shadow: 0px 0px 35px 35px rgba(60, 46, 255, 0.54);
+    margin: 75px auto;
+    overflow: hidden;
+}
+
+.headOfCalc {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* width: 50%; */
+}
+
+.headOfCalc::after {
+    content: "";
+    background-color: white;
+    display: block;
+    width: 50px;
+    height: 3px;
+    position: absolute;
+    top: 60px;
+    /* left: 1px; */
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.headOfCalc:hover::after {
+    width: 190px;
+}
+
+.divOfCards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 columns with equal width */
+    grid-gap: 10px;
+    margin-left: 20px;
+}
+
+.divOfCards > .card {
+    background-color: rgb(178, 22, 22);
+    width: 80%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(217, 202, 202);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.screenOfCalc {
+    position: relative;
+    width: 90%;
+    height: 90px;
+    background-color: rgb(129 178 188);
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+.screenOfCalc > p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lastOfCards {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.lastOfCards .card {
+    background-color: rgb(60, 106, 139);
+    width: 44%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(217, 202, 202);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px 22px;
+}
