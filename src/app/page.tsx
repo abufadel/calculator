@@ -1,5 +1,7 @@
 import Card from './components/cards/card'
 import './page.css'
+// import './handles/handleClick'
+
 export default function Home() {
   return (
     <>
@@ -31,6 +33,10 @@ export default function Home() {
           <Card number='=' />
         </div>
       </div>
+      
+      {
+        
+      }
     </>
   )
 }
