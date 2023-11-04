@@ -3,9 +3,7 @@ type Cardparams = {
 
 function Card(props: Cardparams) {
     return (
-        <div className="card">
-            <button>{props.number}</button>
-        </div>
+        <button className="card" >{props.number}</button>
     )
 }
 

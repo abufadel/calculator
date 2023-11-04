@@ -1,15 +1,24 @@
 .bodyOfCalc {
     background-color: #0f2763;
-    position: relative;
+    position: absolute;
     width: 75%;
     max-width: 500px;
-    height: 77vh;
+    /* height: ; */
     border-radius: 6px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
     -webkit-box-shadow: 0px 0px 35px 35px rgba(60, 46, 255, 0.54);
     -moz-box-shadow: 0px 0px 35px 35px rgba(60, 46, 255, 0.54);
     box-shadow: 0px 0px 35px 35px rgba(60, 46, 255, 0.54);
-    margin: 75px auto;
+    /* margin: 75px auto; */
     overflow: hidden;
+}
+
+@media (max-width: 400px) and (min-width: 500px) {
+    .bodyOfCalc {
+        height: 100vh;
+    }
 }
 
 .headOfCalc {
@@ -20,7 +29,6 @@
     position: relative;
     display: flex;
     justify-content: center;
-    /* width: 50%; */
 }
 
 .headOfCalc::after {
@@ -31,7 +39,6 @@
     height: 3px;
     position: absolute;
     top: 60px;
-    /* left: 1px; */
     border-radius: 6px;
     transition: 0.3s;
 }
@@ -59,6 +66,23 @@
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
+    transition: 0.2s;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    box-shadow:
+        #c0392b 0px 7px 2px,
+        #000 0px 8px 5px;
+    position: relative;
+}
+.divOfCards > .card:hover {
+    opacity: 1;
+}
+
+.divOfCards > .card:active {
+    top: 4px;
+    box-shadow:
+        #c0392b 0px 3px 2px,
+        #000 0px 3px 5px;
 }
 
 .screenOfCalc {
@@ -68,6 +92,7 @@
     background-color: rgb(129 178 188);
     margin: 20px auto;
     border-radius: 12px;
+    overflow: hidden;
 }
 
 .screenOfCalc > p {
@@ -83,12 +108,13 @@
 .lastOfCards {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
     color: white;
 }
 
 .lastOfCards .card {
     background-color: rgb(60, 106, 139);
-    width: 44%;
+    width: 100%;
     height: 50px;
     padding: 10px;
     border-radius: 12px;
@@ -99,5 +125,72 @@
     font-weight: bold;
     cursor: pointer;
     margin: 10px 22px;
+    transition: 0.2s;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    box-shadow:
+        rgb(106, 149, 179) 0px 7px 2px,
+        #000 0px 8px 5px;
+    position: relative;
 }
 
+.lastOfCards .card:hover {
+    opacity: 1;
+}
+
+.lastOfCards .card:active {
+    top: 4px;
+    box-shadow:
+        rgb(106, 149, 179) 0px 3px 2px,
+        #000 0px 3px 5px;
+}
+
+.equal .card {
+    background-color: #b69511;
+    width: 80%;
+    height: 50px;
+    padding: 10px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(217, 202, 202);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+    opacity: 0.8;
+    letter-spacing: 1px;
+    box-shadow:
+        #bcab68 0px 7px 2px,
+        #000 0px 8px 5px;
+    position: relative;
+}
+.equal .card:hover {
+    opacity: 1;
+}
+
+.equal .card:active {
+    top: 4px;
+    box-shadow:
+        #bcab68 0px 3px 2px,
+        #000 0px 3px 5px;
+}
+
+.footer {
+    width: 100%;
+    height: 25px;
+    background-color: #0f2763;
+    color: white;
+    position: absolute;
+    text-align: center;
+    /* font-size: 17px; */
+    font-weight: bold;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer a { 
+    text-decoration: none;
+    color:aqua
+}
