@@ -38,7 +38,7 @@ function Home() {
         </div>
       </div>
       <div className="footer">
-        coded by <a href="www.linkedin.com/in/abufadelin" target="_blank" >abufadel</a>
+        coded by <a href="https://linkedin.com/in/abufadelin" target="_blank" >abufadel</a>
       </div>
     </>
   )
