@@ -2,6 +2,11 @@ let test = 0;
 let currentNum 
 const handleClick = (e: any) => {
     let screen = document.querySelector('.screen');
+
+    if (!screen) {
+        console.error("Element with class 'screen' not found.");
+        return;
+    }
     
     // to put the number on the screen
     if (
@@ -23,7 +28,6 @@ const handleClick = (e: any) => {
             screen.innerHTML += e.target.innerHTML;
         }
         test = 1;
-        currentNum = e.target.innerHTML
     }
 
     // to put the marks on the screen
