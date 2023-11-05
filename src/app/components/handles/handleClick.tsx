@@ -53,7 +53,7 @@ const handleClick = (e: any) => {
         currentNum = e.target.innerHTML
     }
     if (
-        e.target.innerHTML == 'Del'
+        e.target.innerHTML == 'del'
     ) {
         screen.innerHTML = screen.innerHTML.slice(0, -1);
     }
